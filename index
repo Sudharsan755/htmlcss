@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> Github basics</title>
+</head>
+<body>
+<h1> Initial Setup </h1>
+<hr>
+<h3>Download Git </h3>
+<p> git --version = check git installed </p>
+<br>
+<p> git config global user.name 'username'</p>
+<br>
+<p> git config global user.email 'emailid'</p>
+</body>
+</html>
