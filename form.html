@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> form validation </title>
+</head>
+<body>
+	<hr>
+	<h3> Form validation</h3>
+	<form action="" method="get" target="_parent">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="name">
+		<br>
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob">
+		<br>
+		<p>Gender:</p>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<br><br>
+		<p>Favorite Movies:</p>
+		<input type="checkbox" id="crime" name="movie" value="Crime">
+		<label for="crime">Crime</label>
+		<input type="checkbox" id="horror" name="movie" value="Horror">
+		<label for="horror">Horror</label>
+		<input type="checkbox" id="comedy" name="movie" value="Comedy">
+		<label for="comedy">Comedy</label>
+		<br>
+		<label for="movies">Choose Movies:</label>
+		<select id="movies" name="movies" size="3" multiple>
+			<option value="Crime">Crime</option>
+			<option value="Horror">Horror</option>
+			<option value="Comedy">Comedy</option>
+			<option value="Scientific">Scientific</option>
+		</select>
+		<br>
+		<label for="suggestion">Suggestions:</label><br>
+		<textarea id="suggestion" name="suggestion" rows="10" cols="30"></textarea>
+		<br>
+		<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+		<br><br>
+		<fieldset>
+			<legend>Upload File</legend>
+			<label for="myfile">Select a file:</label>
+			<input type="file" id="myfile" name="myfile">
+		</fieldset>
+		<label for="movieName">Movie Name:</label>
+		<input list="moviesname" id="movieName" name="movieName">
+		<datalist id="moviesname">
+			<option value="COLD CASE">
+				<option value="HIT">
+					<option value="SARDAR">
+						<option value="KGF">
+						</datalist>
+						<br>
+						<label for="vol">Volume (between 0 and 50):</label>
+						<input type="range" id="vol" name="vol" min="0" max="50">
+						<br>
+						<input type="submit" value="Submit"> | <input type="reset" value="reset">
+					</form>
+				</body>
+				</html>

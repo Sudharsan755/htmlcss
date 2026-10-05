@@ -3,20 +3,37 @@
 <head>
 	<title>Sample Webpage</title>
 	<link rel="icon" href="emoji.ico">
+	<style>
+		.her {
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+
+		}
+		.redd {
+			background-color: blue;
+			color: white;
+			border: 2px solid black;
+			margin: 10px;
+			padding: 5px;
+		}
+	</style>
 </head>
 <body>
+	<header>
+		<nav dir="rtl" style="font-size: 20px;"> 
+			<a href ="projectsetupgit.html">home</a> | 
+			<a href="#f">Forms </a> |
+			<a href="imagemap.html">Imagemap</a> |
+			<a href="github.html">Github</a>
+		</nav>
+	</header>
+	<hr>
 	<Center> <h2> Computer component</h2></Center>
 	<p dir="rtl">This line displayes form right to left of the webpage </p>
-	<blockquote title="I have used the tooltip">Click on the image  parts to view the computer component.</blockquote>
-	<h3> COMPONENTS</h3>
-	<center><img src="cm.jpg" width="1024" height="768" alt="componetns" usemap="#pic"></center>
-	<map name="pic">
-		<area shape="rect" coords="47,63,625,345" alt="Battery" href="https://techiestore.in/pages/search-results-page?q=battery" target="_blank">
-		<area shape="rect" coords="635,65,940,275" alt="Hard Drive / SSD" href=" https://www.asus.com/in/content/ssd-vs-hdd/" target="_blank">
-		<area shape="circle" coords="250,499,115" alt="Cooling Fan" href="https://techiestore.in/products/techie-one-fan-laptop-cooling-pad-for-upto-15-6-inch-laptops" target="_blank">
-		<area shape="rect" coords="440,495,640,570" alt="Processor (CPU)"href="https://www.techradar.com/how-to/what-is-a-processor" target="_blank">
-		<area shape="rect" coords="630,285,845,470" alt="RAM Slots"href=" https://www.fingers.co.in/computer-peripherals/memory-modules-ram/fingers-ram-memory-cards" target="_blank">
-	</map>
+	<p dir="ltr">This line displayes form left to right of the webpage </p>
+	<p> <bdo dir="rtl">Using bdo This text will be written from right to left</bdo></p>
+	<p> <bdo dir="ltr">Using bdo This text will be written from right to left</bdo></p>
 	<h5> <q>Just move Your mouse toward the below line</q> </h5>
 	<p title="WORLD NEWS as Advancement in Technology">The Trending Updates is <q>Price of the Ram and SSD are going to be kept on increasing.</q></p>
 	<p>This price hike was based on the AI development and machines which needs performance<cite> -speed </cite>.</p>
@@ -29,14 +46,17 @@
 	</address>
 	<hr>
 	<pre> Table format </pre>
-	<table border="5" bordercolor="purple"cellpadding="2" cellspacing="5">
-		<tr>
-			<th>Name</th>
+	<table border="5" bordercolor="purple" cellpadding="2" cellspacing="5">
+		<colgroup>
+			<col span="2" style="background-color: #D6EEEE">
+		</colgroup>
+		<tr style="background-color: #D6EEEE;">
+			<th style="width:50%">Name</th><!-- It will calculate the highest wdht based on the column-->
 			<th>Salary</th>
 			<th>Role</th>
 		</tr>
 		<tr >
-			<td>Ramesh Raman</td>
+			<td style="width:70%">Ramesh Raman</td>
 			<td>40000</td>
 			<td>Developer</td>
 		</tr>
@@ -52,7 +72,7 @@
 		</tr>
 		<tr>
 			<td>Total</td>
-			<td colspan="2">2600000</td>
+			<td colspan="2">1600000</td>
 		</tr>
 	</table>
 	<hr>
@@ -64,7 +84,63 @@
 		<li>Ordered list</li>
 		<li>UnOrdered list</li>
 		<li>Definition list</li><ol>
-	</dd>
-	<hr>
-</body>
-</html>
+		</dd>
+		<hr>
+		<h3> DIV and Span </h3>
+		<div>
+			<p>Div is used to split the section (block level) <br> whileThe <span> element is an inline container used to mark up a part of a text, or a part of a document(inline)</p>
+			</div>
+			<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+			<hr>
+			<h3>Div and class attribute </h3>
+			<div class="her">
+				<pre> Hello 123</pre>
+			</div>
+			<div class="redd">
+				<pre> Hello 53452</pre>
+			</div>
+			<div class="her">
+				<pre> Hello 12324</pre>
+			</div>
+			<hr>
+			<h3> bbutton type </h3>
+			<button type="button"onclick="document.getElementById('demo').innerHTML = Date()">
+			&copy Click me to display Date and Time.</button>
+			<p id="demo"></p>
+			<p> this works based on the unique id demo as the result, output will displayed as mentioned element used </p>
+			<hr>
+			<h4> ComputerCode based html </h4>
+			<p> code (this tag is for code display format)
+				kbd(this is for key board funcionlity display like Ctrl + S),
+				samp (for output style),var(varial declaration)
+			</p>
+			<hr>
+			<h3>video Format </h3>
+			<video  height="150" width="300" controls preload>
+				<source src="y.mp4" type="video/mp4">
+				</video>
+				<h3> audio format </h3>
+				<audio  height="150" width="300" controls autoplay muted loop >
+					<source src="music.mp3" type="audio/mp3">
+					</audio>
+					<hr>
+					<h3 id="f"> iframe example </h3>
+					<iframe  src="form.html" title ="form" height="500" width="350">
+					</iframe>
+					<hr>
+<!--				<iframe  src= "https://www.youtube.com/embbed/emFMHH2Bfvo" width="450" height="300"  >
+				</iframe> <hr>-->
+				<h3> Canvas </h3>
+				<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+				Your browser does not support the HTML canvas tag.</canvas>
+				<script>
+					var c = document.getElementById("myCanvas");
+					var ctx = c.getContext("2d");
+					ctx.moveTo(0,0);
+					ctx.lineTo(100,100);
+					ctx.moveTo(200,0);
+					ctx.lineTo(0,200);
+					ctx.stroke();
+				</script>
+			</body>
+			</html>
