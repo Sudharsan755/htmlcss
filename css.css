@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+#generalheader {
+    background-color: hotpink;
+    padding: 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#generalheader nav {
+    font-size: 20px;
+}
+
+.ho {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.ho:hover {
+    background-color: gold;
+    color: black;
+}
+
+.Begining {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.address {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin: 10px;
+}
+
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    color: darkgreen;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
+
+.her {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.redd {
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.media {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.graphics {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.graphics1,
+.graphics2 {
+    border: 2px solid gray;
+    padding: 15px;
+}
+
+#generalfooter {
+    background-color: hotpink;
+    padding: 20px;
+    text-align: center;
+}
+
+#generalfooter button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#generalfooter button:hover {
+    background-color: gold;
+}

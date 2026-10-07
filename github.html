@@ -1,43 +1,67 @@
 <html>
+
 <head>
 	<title> Github basics</title>
 	<link rel="icon" href="emoji.ico">
+	<link rel="stylesheet" href="css.css">
 </head>
-<body >
-	<header>
-		<nav dir="rtl" style="font-size: 20 px;"> 
-			<a href ="projectsetupgit.html">home</a> | 
-			<a href="#f">Forms </a> |
-			<a href="imagemap.html">Imagemap</a> |
-			<a href="github.html">Github</a>
+
+<body>
+	<header id="generalheader">
+		<nav dir="rtl" style="font-size: 20px;">
+			<a class=ho href="projectsetupgit.html">home</a> |
+			<a class=ho href="#f">Forms </a> |
+			<a class=ho href="imagemap.html">Imagemap</a> |
+			<a class=ho href="github.html">Github</a>
 		</nav>
 	</header>
-	<h3> Initial Setup for git repository</h3>
-	<hr>
-	<table border="4" color="blue">
-		<caption><a href="https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.1/Git-2.56.0-64-bit.exe">Download Git</a> </caption>
-		<tr><td> git --version = check git installed </td></tr>
-		<tr> <td> git config global user.name 'username'</td></tr>
-		<tr><td> git config global user.email 'emailid'</td></tr>
-	</table><hr>
-	<h3> Git Commands and Usage </h3>
-	<ul style="list-style-type:square;">
-		<li><i>git init</i> =initialization of git</li>
-		<li><i>git status</i> =tells the current status of git</li>
-		<li><i>git add .</i> = add the files to the git</li>
-		<li><i>git commit -m "message" </i> = create a savepoint with message </li>
-		<li><i>git push -u origin main</i> =push towards our git repository</li>
-		<li><i>git branch <mark>branchname</mark></i> = creates a mini version like branch to try some update </li>
-		<li><i>git checkout <mark>branchname</mark></i> = to move the branch mentioned </li>
-		<li><i>git log</i> = tells the committ history </li>
-		<li><i>git clone url</i> = make a copy of githu repository to our local system.</li>
-		<li><i>git diff branchname branchname</i> = Shows line-by-line modifications</li>
-		<li><i>git merge branchname</i> = checkout to which repo to merge with and enter the branchname</li>
-		<li><i>git reset filename (or) git restore --staged file </i> = Unstage a file or reset to a previous commit </li>
-		<li><i>git revert a1b2c3d </i> = Undo a commit by creating a new commit</li>
-		<li><i>git stash</i> = Temporarily save uncommitted changes (e.g.,to switch branches)</li>
-		<li><i>git stash pop</i> = Restores the most recent stash</li>
-		<li><i>git pull</i> = Fetch and merge remote changes.(Combine remote repo wiht our repo)</li>
-	</ul>
+	<main>
+		<section class="git-setup">
+			<h3> Initial Setup for git repository</h3>
+			<table border="4" color="blue">
+				<caption>
+					<a
+						href="https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.1/Git-2.56.0-64-bit.exe">Download
+						Git
+					</a>
+				</caption>
+				<tr>
+					<td> git --version = check git installed </td>
+				</tr>
+				<tr>
+					<td> git config global user.name 'username'</td>
+				</tr>
+				<tr>
+					<td> git config global user.email 'emailid'</td>
+				</tr>
+			</table>
+		</section>
+		<hr>
+		<section class="basic commands">
+			<h3> Git Commands and Usage </h3>
+			<ul style="list-style-type:'$ ';">
+				<li><i>git init</i> =initialization of git</li>
+				<li><i>git status</i> =tells the current status of git</li>
+				<li><i>git add .</i> = add the files to the git</li>
+				<li><i>git commit -m "message" </i> = create a savepoint with message </li>
+				<li><i>git push -u origin main</i> =push towards our git repository</li>
+				<li><i>git branch <mark>branchname</mark></i> = creates a mini version like branch to try some update
+				</li>
+				<li><i>git checkout <mark>branchname</mark></i> = to move the branch mentioned </li>
+				<li><i>git log</i> = tells the committ history </li>
+				<li><i>git clone url</i> = make a copy of githu repository to our local system.</li>
+				<li><i>git diff branchname branchname</i> = Shows line-by-line modifications</li>
+				<li><i>git merge branchname</i> = checkout to which repo to merge with and enter the branchname</li>
+				<li><i>git reset filename (or) git restore --staged file </i> = Unstage a file or reset to a previous
+					commit
+				</li>
+				<li><i>git revert a1b2c3d </i> = Undo a commit by creating a new commit</li>
+				<li><i>git stash</i> = Temporarily save uncommitted changes (e.g.,to switch branches)</li>
+				<li><i>git stash pop</i> = Restores the most recent stash</li>
+				<li><i>git pull</i> = Fetch and merge remote changes.(Combine remote repo wiht our repo)</li>
+			</ul>
+		</section>
+	</main>
 </body>
+
 </html>
